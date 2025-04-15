@@ -1,9 +1,9 @@
---2. Find all customers who live in every city.
+--2. Find all customers who live in every state.
 
 SELECT COUNT(customer_id) AS customers,
-       city
+       state
 FROM customers
-GROUP BY city
+GROUP BY state
 ORDER BY COUNT(customer_id) DESC;
 
  
