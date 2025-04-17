@@ -3,9 +3,9 @@
 SELECT order_items.order_id,
        first_name,
        last_name,
-      SUM(quantity * list_price) AS total_spent,
+      SUM(quantity * (list_price - discount)) AS total_spent,
 
-      RANK() OVER (ORDER BY SUM(list_price * quantity) DESC) AS rank
+      RANK() OVER (ORDER BY   SUM(quantity * (list_price - discount)) DESC) AS rank
 
        
 FROM order_items

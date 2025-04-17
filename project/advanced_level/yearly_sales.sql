@@ -1,7 +1,7 @@
 --19. Find the yearly sales.
 
 SELECT EXTRACT(YEAR FROM order_date) AS order_year,
-       SUM (quantity * list_price) AS total_sales
+       ROUND(SUM (quantity * list_price - discount)) AS total_sales
 FROM order_items
 
 LEFT JOIN orders ON order_items.order_id = orders.order_id

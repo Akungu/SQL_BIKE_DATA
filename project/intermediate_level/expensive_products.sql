@@ -5,4 +5,4 @@ SELECT product_id,
        list_price
 FROM products
 ORDER BY list_price DESC
-LIMIT 5;
+LIMIT 8;
