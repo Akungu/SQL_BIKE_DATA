@@ -409,6 +409,7 @@ GROUP BY 1 ;
 
 ```
 ![yearly_sales](assets/yearly_sales.png)
+
 ![total_yearly_sales](assets/total_yearly_sales.png)
 
 #### Conclusion
